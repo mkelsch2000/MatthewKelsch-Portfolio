@@ -16,8 +16,7 @@ body {
     background-color: var(--color-3);
 }
 
-/*header styles*/
-
+/*start header styles*/
 header {
     padding: 0;
     display: flex;
@@ -73,11 +72,9 @@ header a {
     color: var(--color-3);
     text-decoration: none;
 }
-
 /* end of header styles */
 
 /* start of hero styles */
-
 .hero {
     margin: 0 1%;
     background-color: var(--color-2);
@@ -114,13 +111,12 @@ header a {
 /* end hero section */
 
 /* start project section */
-
 .projects {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     background-color: var(--color-2);
-    margin: 1% 1%;
+    margin: 1% 1% 0 1%;
 }
 
 .projects h2 {
@@ -141,6 +137,39 @@ header a {
     padding: 0;
     border-radius: 10%;
 }
+/*end project section*/
 
+/* start contact section */
+.contact {
+    background-color: var(--color-1);
+    padding: 5px 0 20px 0;
+    text-align: center;
+}
+
+#contact-box {
+    width: 100%;
+}
+.contact h2 {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    border-bottom: var(--border-main);
+    width: 10%;
+    padding: 10px;
+}
+
+.contact p {
+    padding: 10px;
+}
+
+.contact address {
+    font-size: 20px; 
+}
+
+.contact address a {
+    text-decoration: none;
+    color: var(--color-3);
+}
+/* end contact section */
 
 
