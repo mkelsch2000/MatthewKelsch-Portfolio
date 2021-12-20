@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-1: #242526;
+    --color-2: #fff;
+    --color-3: #59bfff;
+    --border-main: 1px solid #59bfff;
+}
+
+body {
+    color: var(--color-3);
+    font-family: 'Times New Roman', Tahoma, 'Trebuchet MS';
+    background-image: url(./images/older-image.jpg);
+    background-size: cover;
+}
+
+/*start header styles*/
+header {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: var(--color-1);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header h1 {
+    flex: 0 0 9%;
+    font-size: 30px;
+    top: 0;
+    margin-left: 1%;
+    border-radius: 15px;
+    padding: 0 0.5%;
+    border-left: var(--border-main);
+    border-right: var(--border-main);
+}
+
+header nav {
+    width: 85%;
+    justify-content: space-evenly;
+}
+
+header nav ul {
+    display: flex;
+    
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 100%;
+} 
+
+header nav ul li {
+    flex: 0 0 33%;
+    
+}
+header a {
+    font-size: 20px;
+    color: var(--color-3);
+    text-decoration: none;
+}
+
+#inner-nav {
+    border-left: 1px solid var(--color-3);
+    border-right: 1px solid var(--color-3);
+}
+/* end of header styles */
+
+/* about me section */
+
+.about-me {
+    background-color: var(--color-1);
+    width: 30%;
+    margin: 60px 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 1px 1px var(--color-2);
+}
+
+.about-me h2 {
+    text-align: center;
+}
+
+.about-me p {
+    padding: 10px;
+}
