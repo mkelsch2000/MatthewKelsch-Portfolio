@@ -15,6 +15,7 @@ body {
     font-family: 'Times New Roman', Tahoma, 'Trebuchet MS';
     background-image: url(./images/younger-me.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /*start header styles*/
@@ -40,6 +41,11 @@ header h1 {
     padding: 0 0.5%;
     border-left: var(--border-main);
     border-right: var(--border-main);
+}
+
+header h1:hover {
+    border-color: #ffd700;
+    color: #ffd700;
 }
 
 header nav {
@@ -88,4 +94,64 @@ header a {
 
 .about-me p {
     padding: 10px;
+}
+
+/* Media Query & hovers for Desktops  */
+@media screen and (min-width: 1024px) {
+
+    header a:hover {
+        padding: 10px 60px;
+        background-color: var(--color-3);
+        color: var(--color-1);
+    }
+
+    .about-me:hover {
+        background-color: var(--color-1);
+        width: 95%;
+        margin: 60px 40px;
+        border-radius: 25px;
+        box-shadow: 0 0 1px 1px var(--color-2);
+    }
+
+
+}
+
+/*media query/hovers for tablets*/
+@media screen and (max-width: 1024px) {
+
+    header a:hover {
+        padding: 5px 14px;
+        background-color: var(--color-3);
+        color: var(--color-1);
+    }
+
+    .about-me h2 {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+/* Media Query & hovers for Mobile phones */
+@media screen and (max-width: 575px) {
+
+    header h1 {
+        font-size: 18px;
+        border-radius: 10px;
+        padding: 0 1%;
+    }
+
+    header a {
+        font-size: 12px;
+    }
+
+    header a:hover {
+        padding: 0 8px;
+        background-color: var(--color-3);
+        color: var(--color-1);
+    }
+
+    .about-me h2 {
+        font-size: 14px;
+        padding: 10px;
+    }
 }
