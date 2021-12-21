@@ -113,12 +113,21 @@ header a {
         color: var(--color-1);
     }
 
+    .about-me p {
+        display: none;
+        
+    }
     .about-me:hover {
         background-color: var(--color-1);
         width: 95%;
         margin: 60px 40px;
         border-radius: 25px;
         box-shadow: 0 0 1px 1px var(--color-2);
+        text-align: center;
+    }
+
+    .about-me:hover p {
+        display: contents;
     }
 
     #beautiful-scene img {
