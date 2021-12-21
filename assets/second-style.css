@@ -96,6 +96,14 @@ header a {
     padding: 10px;
 }
 
+
+/*end about me section*/
+
+
+
+
+
+
 /* Media Query & hovers for Desktops  */
 @media screen and (min-width: 1024px) {
 
@@ -113,8 +121,11 @@ header a {
         box-shadow: 0 0 1px 1px var(--color-2);
     }
 
-
+    #beautiful-scene img {
+        display: none;
+    }
 }
+ 
 
 /*media query/hovers for tablets*/
 @media screen and (max-width: 1024px) {
@@ -128,6 +139,21 @@ header a {
     .about-me h2 {
         font-size: 16px;
         padding: 10px;
+    }
+
+    body {
+        background-size: 100% auto;
+    }
+
+    #beautiful-scene {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+    }
+    #beautiful-scene img {
+        max-width: 50%;
+        border-top: 10px solid var(--color-1);
     }
 }
 
@@ -151,7 +177,7 @@ header a {
     }
 
     .about-me h2 {
-        font-size: 14px;
+        font-size: 10px;
         padding: 10px;
     }
 }
